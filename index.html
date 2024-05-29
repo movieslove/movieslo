@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movieslover</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <div class="content">
+            <img src="logos/logo.png" alt="Logo" class="logo-img">
+            <p class="scroll-message">Scroll down</p>
+        </div>
+    </div>
+
+    <h3 class="select-ott">THIS IS A PLATFORM WHERE YOU CAN BUY OTTS FOR LOW COST WHICH IS 100% GENUINE</h3>
+    <h2 class="select-ott">SELECT YOUR FAVOURITE OTT!</h2>
+
+    <div class="ott-container">
+        <div class="ott-card" onclick="toggleOttDetails('netflix')">
+            <img src="logos/netflix1.jpg" alt="Netflix" class="ott-logo">
+        </div>
+        <div class="ott-card" onclick="toggleOttDetails('prime')">
+            <img src="logos/prime3.jpeg" alt="Prime" class="ott-logo">
+        </div>
+        <div class="ott-card" onclick="toggleOttDetails('hotstar')">
+            <img src="logos/hotstar1.png" alt="Hotstar" class="ott-logo">
+        </div>
+        <div class="ott-card" onclick="toggleOttDetails('aha')">
+            <img src="logos/aha1.jpeg" alt="Aha" class="ott-logo">
+        </div>
+        <div class="ott-card" onclick="toggleOttDetails('zee')">
+            <img src="logos/zee1.jpeg" alt="Zee" class="ott-logo">
+        </div>
+        <div class="ott-card" onclick="toggleOttDetails('sony')">
+            <img src="logos/sonylive.jpeg" alt="Sony" class="ott-logo">
+        </div>
+        <div class="ott-card" onclick="toggleOttDetails('youtube')">
+            <img src="logos/youtube2.png" alt="youtube" class="ott-logo">
+        </div>
+        <div class="ott-card" onclick="toggleOttDetails('linkedin')">
+            <img src="logos/LinkedIn1.svg.png" alt="linkedin" class="ott-logo">
+        </div>
+    </div>
+
+    <!-- OTT Details Sections -->
+    <!-- netflixplans -->
+    <div class="ott-details" id="netflix">
+        <h3>NETFLIX PLANS</h3>
+        <div class="plan-container">
+            <div class="plan">
+                <img src="logos/netflix1.jpg" alt="Netflix Premium">
+                <div class="plan-info">
+                    <h4>PREMIUM PLAN</h4>
+                    <ul>
+                        <li>PLAN DURATION : 1 MONTH</li>
+                        <li>DEVICES LOGIN : 1 DEVICE</li>
+                        <li>RESOLUTION : 4K (Ultra HD) + HDR</li>
+                        <li>ORIGINAL PRICE : 220RS</li>
+                        <li>SELLING PRICE : 150RS</li>
+                        <li>ONE TIME DEVICE LOGIN</li>
+                        <li>ON MY MAIL ID OR NUMBER</li>
+                        <li>CAN BE ACCESSED ON TV,MOBILE,TAB,PC</li>
+                    </ul>
+                    <span class="rate"><del>220RS</del> 150RS</span>
+                    <button onclick="purchasePlan('NETFLIX PREMIUM FOR 1 MONTH')">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- primeplans -->
+    <div class="ott-details" id="prime">
+        <h3>PRIME PLANS (ONLY TO WATCH MOVIES AND SERIES)</h3>
+        <div class="plan-container">
+            <div class="plan">
+                <img src="logos/prime3.jpeg" alt="prime">
+                <div class="plan-info">
+                    <h4>6 MONTHS PLAN</h4>
+                    <ul>
+                        <li>PLAN DURATION : 6 MONTH</li>
+                        <li>DEVICES LOGIN : 5 DEVICE</li>
+                        <li>RESOLUTION : 4K (Ultra HD) + HDR</li>
+                        <li>ORIGINAL PRICE : 699RS</li>
+                        <li>SELLING PRICE : 299RS</li>
+                        <li>ON YOUR NUMBER/ GMAIL ID</li>
+                        <li>CAN BE ACCESSED ON TV,MOBILE,TAB,PC</li>
+                    </ul>
+                    <span class="rate"><del>699RS</del> 299RS</span>
+                    <button onclick="purchasePlan('AMAZON PRIME FOR 6 MONTHS')">Purchase</button>
+                </div>
+            </div>
+            <div class="plan">
+                <img src="logos/prime3.jpeg" alt="prime">
+                <div class="plan-info">
+                    <h4>1 YEAR PLAN</h4>
+                    <ul>
+                        <li>PLAN DURATION : 1 YEAR</li>
+                        <li>DEVICES LOGIN : 5 DEVICE</li>
+                        <li>RESOLUTION : 4K (Ultra HD) + HDR</li>
+                        <li>ORIGINAL PRICE : 1499RS</li>
+                        <li>SELLING PRICE : 469RS</li>
+                        <li>ON YOUR NUMBER/ GMAIL ID</li>
+                        <li>CAN BE ACCESSED ON TV,MOBILE,TAB,PC</li>
+                    </ul>
+                    <span class="rate"><del>1499RS</del> 469RS</span>
+                    <button onclick="purchasePlan('AMAZON PRIME FOR 1 YEAR')">Purchase</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- HOTSTAR -->
+    <div class="ott-details" id="hotstar">
+        <h3>DISNEY+ HOTSTAR PLANS</h3>
+        <div class="plan-container">
+            <div class="plan">
+                <img src="logos/hotstar1.png" alt="Hotstar PLAN">
+                <div class="plan-info">
+                    <h4>HOTSTAR PREMIUM PLAN</h4>
+                    <ul>
+                        <li>PLAN DURATION : 1 MONTH</li>
+                        <li>DEVICES LOGIN : 1 DEVICE</li>
+                        <li>RESOLUTION : 4K (Ultra HD) + HDR</li>
+                        <li>ORIGINAL PRICE : 99RS</li>
+                        <li>SELLING PRICE : 50RS</li>
+                        <li>ONE TIME DEVICE LOGIN</li>
+                        <li>ON MY MAIL ID OR NUMBER</li>
+                        <li>CAN BE ACCESSED ON TV,MOBILE,TAB,PC</li>
+                    </ul>
+                    <span class="rate"><del>99RS</del> 50RS</span>
+                    <button onclick="purchasePlan('HOTSTAR PREMIUM FOR 1 MONTH')">Purchase</button>
+                </div>
+            </div>
+            <div class="plan">
+                <img src="logos/hotstar1.png" alt="Hotstar PLAN">
+                <div class="plan-info">
+                    <h4>HOTSTAR PREMIUM PLAN</h4>
+                    <ul>
+                        <li>PLAN DURATION : 3 MONTH</li>
+                        <li>DEVICES LOGIN : 1 DEVICE</li>
+                        <li>RESOLUTION : 4K (Ultra HD) + HDR</li>
+                        <li>ORIGINAL PRICE : 399RS</li>
+                        <li>SELLING PRICE : 250RS</li>
+                        <li>ONE TIME DEVICE LOGIN</li>
+                        <li>ON MY MAIL ID OR NUMBER</li>
+                        <li>CAN BE ACCESSED ON TV,MOBILE,TAB,PC</li>
+                    </ul>
+                    <span class="rate"><del>399RS</del> 250RS</span>
+                    <button onclick="purchasePlan('HOTSTAR PREMIUM FOR 3 MONTH')">Purchase</button>
+                </div>
+            </div>
+            <div class="plan">
+                <img src="logos/hotstar1.png" alt="Hotstar PLAN">
+                <div class="plan-info">
+                    <h4>HOTSTAR PREMIUM PLAN</h4>
+                    <ul>
+                        <li>PLAN DURATION : 1 YEAR</li>
+                        <li>DEVICES LOGIN : 1 DEVICE</li>
+                        <li>RESOLUTION : 4K (Ultra HD) + HDR</li>
+                        <li>ORIGINAL PRICE : 899RS</li>
+                        <li>SELLING PRICE : 549RS</li>
+                        <li>ONE TIME DEVICE LOGIN</li>
+                        <li>ON MY MAIL ID OR NUMBER</li>
+                        <li>CAN BE ACCESSED ON TV,MOBILE,TAB,PC</li>
+                    </ul>
+                    <span class="rate"><del>899RS</del> 549RS</span>
+                    <button onclick="purchasePlan('HOTSTAR PREMIUM FOR 1 YEAR')">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- linkedin -->
+    <div class="ott-details" id="linkedin">
+        <h3>LINKEDIN PLANS</h3>
+        <div class="plan-container">
+            <div class="plan">
+                <img src="logos/LinkedIn1.svg.png" alt="LINKEDIN Premium">
+                <div class="plan-info">
+                    <h4>PREMIUM PLAN (FOR NEW USERS)</h4>
+                    <ul>
+                        <li>PLAN DURATION : 6 MONTH</li>
+                        <li>WHO DIDN'T USED TRAIL OR PREMIUM BEFORE</li>
+                        <li>ORIGINAL PRICE : 2100RS</li>
+                        <li>SELLING PRICE : 650RS</li>
+                        <li>ONE TIME DEVICE LOGIN</li>
+                        <li>ON YOUR MAIL ID OR NUMBER</li>
+                    </ul>
+                    <span class="rate"><del>2100RS</del> 650RS</span>
+                    <button onclick="purchasePlan('LINKEDIN PREMIUM FOR 1 MONTH')">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sonyliv -->
+    <div class="ott-details" id="sony">
+        <h3>SONYLIV PLANS</h3>
+        <div class="plan-container">
+            <div class="plan">
+                <img src="logos/sonylive.jpeg" alt="SONYLIV Premium">
+                <div class="plan-info">
+                    <h4>PREMIUM PLAN</h4>
+                    <ul>
+                        <li>PLAN DURATION : 1 YEAR</li>
+                        <li>DEVICES LOGIN : 5 DEVICE</li>
+                        <li>RESOLUTION : FULL HD 1080P</li>
+                        <li>ORIGINAL PRICE : 1020RS</li>
+                        <li>SELLING PRICE : 430RS</li>
+                        <li>ADD FREE STREAMING</li>
+                        <li>ON YOUR MAIL ID OR NUMBER</li>
+                        <li>CAN BE ACCESSED ON TV,MOBILE,TAB,PC</li>
+                    </ul>
+                    <span class="rate"><del>1020RS</del> 430RS</span>
+                    <button onclick="purchasePlan('SONY LIV PREMIUM FOR 1 YEAR')">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ZEE5 -->
+    <div class="ott-details" id="zee">
+        <h3>ZEE5 PLANS</h3>
+        <div class="plan-container">
+            <div class="plan">
+                <img src="logos/zee1.jpeg" alt="ZEE5 Premium">
+                <div class="plan-info">
+                    <h4>PREMIUM PLAN</h4>
+                    <ul>
+                        <li>PLAN DURATION : 1 YEAR</li>
+                        <li>DEVICES LOGIN : 5 DEVICE</li>
+                        <li>RESOLUTION : FULL HD 1080P</li>
+                        <li>ORIGINAL PRICE : 1499RS</li>
+                        <li>SELLING PRICE : 420RS</li>
+                        <li>ADD FREE STREAMING</li>
+                        <li>ON YOUR MAIL ID OR NUMBER</li>
+                        <li>CAN BE ACCESSED ON TV,MOBILE,TAB,PC</li>
+                    </ul>
+                    <span class="rate"><del>1499RS</del> 420RS</span>
+                    <button onclick="purchasePlan('ZEE5 PREMIUM FOR 1 YEAR')">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- youtube -->
+    <div class="ott-details" id="youtube">
+        <h3>YOUTUBE PLANS</h3>
+        <div class="plan-container">
+            <div class="plan">
+                <img src="logos/youtube2.png" alt="YOUTUBE Premium">
+                <div class="plan-info">
+                    <h4>PREMIUM PLAN</h4>
+                    <ul>
+                        <li>PLAN DURATION : 6 MONTHS</li>
+                        <li>RESOLUTION : 4K ULTRA HD</li>
+                        <li>ORIGINAL PRICE : 845RS</li>
+                        <li>SELLING PRICE : 499RS</li>
+                        <li>ADD FREE STREAMING</li>
+                        <li>ON YOUR MAIL ID OR NUMBER</li>
+                        <li>CAN BE ACCESSED ON TV,MOBILE,TAB,PC</li>
+                    </ul>
+                    <span class="rate"><del>845RS</del> 499RS</span>
+                    <button onclick="purchasePlan('YOUTUBE PREMIUM FOR 6 MONTHS')">Purchase</button>
+                </div>
+            </div>
+            <div class="plan">
+                <img src="logos/youtube2.png" alt="YOUTUBE Premium">
+                <div class="plan-info">
+                    <h4>PREMIUM PLAN</h4>
+                    <ul>
+                        <li>PLAN DURATION : 1 YEAR</li>
+                        <li>RESOLUTION : 4K ULTRA HD</li>
+                        <li>ORIGINAL PRICE : 1500RS</li>
+                        <li>SELLING PRICE : 750RS</li>
+                        <li>ADD FREE STREAMING</li>
+                        <li>ON YOUR MAIL ID OR NUMBER</li>
+                        <li>CAN BE ACCESSED ON TV,MOBILE,TAB,PC</li>
+                    </ul>
+                    <span class="rate"><del>1500RS</del> 750RS</span>
+                    <button onclick="purchasePlan('YOUTUBE PREMIUM FOR 1 YEAR')">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sonyliv -->
+    <div class="ott-details" id="aha">
+        <h3>AHA PLANS</h3>
+        <div class="plan-container">
+            <div class="plan">
+                <img src="logos/aha1.jpeg" alt="AHA Premium">
+                <div class="plan-info">
+                    <h4>GOLD PLAN</h4>
+                    <ul>
+                        <li>PLAN DURATION : 1 YEAR</li>
+                        <li>DEVICES LOGIN : 5 DEVICE</li>
+                        <li>RESOLUTION : 4K ULTRA HD </li>
+                        <li>ORIGINAL PRICE : 700RS</li>
+                        <li>SELLING PRICE : 430RS</li>
+                        <li>ADD FREE STREAMING</li>
+                        <li>ON YOUR MAIL ID OR NUMBER</li>
+                        <li>CAN BE ACCESSED ON TV,MOBILE,TAB,PC</li>
+                    </ul>
+                    <span class="rate"><del>700RS</del> 430RS</span>
+                    <p class="out-of-stock">Out of Stock</p> <!-- DISPLAY OUT OF STOCK  -->
+                    <button onclick="purchasePlan('AHA GOLD FOR 1 YEAR')"disabled>Purchase</button> <!-- REMOVE THE DISABLED TO ACTIVATE THE BUTTON -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Similar sections for other OTT services ... -->
+
+    <!-- Latest Movies Section -->
+    <div class="latest-movies">
+        <h2>LATEST MOVIES</h2>
+        <div class="image-gallery">
+            <div class="image-container">
+                <img src="mvepics/premalu.jpeg" alt="Movie 1">
+                <img src="mvepics/djtillu.jpeg" alt="Movie 1">
+                <img src="mvepics/gunturkaram.jpeg" alt="Movie 1">
+                <img src="mvepics/hanuman.jpeg" alt="Movie 1">
+                <img src="mvepics/vidyavahanam.jpeg" alt="Movie 1">
+                <img src="mvepics/mydeardonga.jpeg" alt="Movie 1">
+                <img src="mvepics/sathigani.jpg" alt="Movie 1">
+                <img src="mvepics/heartofstone.jpeg" alt="Movie 1">
+                <img src="mvepics/sundharamaster.jpeg" alt="Movie 1">
+                <img src="mvepics/getanjali.jpeg" alt="Movie 1">
+                <img src="mvepics/madgaon.jpeg" alt="Movie 1">
+                <img src="mvepics/manjummelboys.jpeg" alt="Movie 1">
+                <img src="mvepics/prasanavadhanam.jpeg" alt="Movie 1">
+                <img src="mvepics/decodethestory.jpeg" alt="Movie 1">
+                <img src="mvepics/WhatsApp Image 2024-05-22 at 4.53.49 PM.jpeg" alt="Movie 1">
+             
+
+
+            </div>
+            <!-- Other images ... -->
+        </div>
+    </div>
+    
+    <section class="reviews reviews-container">
+        <h1 class="">CUSTOMER REVIEWS</h1>
+    
+        <div class="review">
+            <i class="fas fa-user"></i>
+            <h3>Arjun</h3>
+            <div class="stars">
+                <span>⭐️⭐️⭐️⭐️⭐️</span>
+            </div>
+            <p>I HAVE PURCHASED ZEE5 PREMIUM FOR 12 MONTHS AND IT IS AMAZING 😍😍 .</p>
+            <div class="customer-pics">
+                <img src="CUSTOMER/ZEE5PREMIUM.jpeg" alt="Pic 1">
+            </div>
+        </div>
+    
+        <div class="review">
+            <i class="fas fa-user"></i>
+            <h3>Vikram</h3>
+            <div class="stars">
+                <span>⭐️⭐️⭐️⭐️⭐️</span>
+            </div>
+            <p>I HAVE PURCHASED HOTSTAR PREMIUM FOR 600RS(1 YEAR) AND IT IS WORKING SUPERBBB🎉🎉.</p>
+            <div class="customer-pics">
+                <img src="CUSTOMER/hotstar1.jpeg" alt="Pic 1">
+            </div>
+        </div>
+        <div class="review">
+            <i class="fas fa-user"></i>
+            <h3>Divya</h3>
+            <div class="stars">
+                <span>⭐️⭐️⭐️⭐️⭐️</span>
+            </div>
+            <p>I PAYED FOR HOTSTAR 3MONTHS PACK AND IT'S WORTH THE AMOUNT 🥳.</p>
+            <div class="customer-pics">
+                <img src="CUSTOMER/hotstar2.jpeg" alt="Pic 1">
+            </div>
+        </div>
+        <div class="review">
+            <i class="fas fa-user"></i>
+            <h3>Siri</h3>
+            <div class="stars">
+                <span>⭐️⭐️⭐️⭐️⭐️</span>
+            </div>
+            <p>Thankyou movieslover for giving me at low cost 🥰.</p>
+            <div class="customer-pics">
+                <img src="CUSTOMER/hotstar3.jpeg" alt="Pic 1">
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="https://www.instagram.com/movies_lover718"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Movieslover © 2023</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <div id="sparkle-container"></div>
+    
+
+
+</body>
+</html>
