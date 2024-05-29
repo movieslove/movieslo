@@ -446,5 +446,40 @@ input[type="submit"]:hover {
 @keyframes fadeOut {
     to { opacity: 0.1; }
 }
+/* responsive */
+body {
+    background-color: #f8f9fa;
+    margin-top: 20px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.movie {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.movie:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.movie img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
 
 
